@@ -17,11 +17,10 @@ RUN mkdir hacking \
 && curl -SL https://raw.githubusercontent.com/uia-worker/is105misc/master/sem01v24/pawned.sh > pawned.sh \
 && chmod 764 pawned.sh \
 && cd ..
-RUN git config --global user.email "olebo@uia.no"
-\
+RUN git config --global user.email "olebo@uia.no"\
 && git config --global user.name "oleols1" \
 && git config --global url."https://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:@github.com".insteadOf "https://github.com" \
-&& mkdir -p github.com/GITHUB-oleols1
+&& mkdir -p github.com/oleols1
 USER root
 RUN curl -SL https://go.dev/dl/go1.21.7.linux-amd64.tar.gz \ | tar xvz -C /usr/local
 USER olebj
